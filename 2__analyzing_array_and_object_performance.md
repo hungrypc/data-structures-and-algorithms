@@ -49,6 +49,6 @@ concat  | O(n)
 slice   | O(n)
 splice  | O(n)
 sort    | O(n logn)
-*       | O(n)
+etc     | O(n)
 
-note: * = forEach/map/filter/reduce/etc
+note: etc = forEach/map/filter/reduce/etc
