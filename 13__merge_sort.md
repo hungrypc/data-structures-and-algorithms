@@ -99,35 +99,21 @@ function mergeSort(arr) {
 }
 ```
 
+## big O of mergeSort
 
+- time complexity:
+  - best case: O(n log n)
+  - average: O(n log n)
+  - worst case: O(n log n)
+- space complexity: O(n)
+  - more elements => more decomposition => more space
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+why is it O(n log n)?
+because we split the full array into multiple arrays of 1 element
+  - how many splits do we have to do to get to this point?
+  - the relationship here is log n
+    - as n grows, the number of times we have to split it up grows at the rate of log n
+  - each time that we decompose it, we have O(n) comparisons per decomposition
+    - we compare each element to each other => O(n) comparisons
+    - as n grows, the merge algorithm itself (not the mergeSort, just the merge) has O(n) time complexity
+therefore, in total: O(n log n)
