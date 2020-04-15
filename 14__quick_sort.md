@@ -58,44 +58,32 @@ psuedocode:
 - call the pivot helper on the array
 - when the helper returns the updated pivot index, recursively call the pivot helper on the subarray to the left of that index, and the subarray to the right of that index
 
+## implementation
+```js
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  if (left < right) {
+    let pivotIndex = pivot(arr, left, right);
 
+     // left
+     quickSort(arr, left, pivotIndex - 1);
 
+     // right
+     quickSort(arr, pivotIndex + 1, right);
+  }
+  return arr;
+}
+```
 
+## bigO
 
+- time complexity:
+  - best = O(n log n)
+  - average = O(n log n)
+  - worst = O(n^2)
+- space complexity: O(log n)
 
+similar to merge sort -> as n grows, we have to make log n decompositions. BUT, we also have to make O(n) comparisons in each decomposition
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+our quicksort starts from the beginning of the array. If the array is already sorted, this would cause the function to make O(n) decompositions and O(n) comparisons per decompositions: O(n^2)
+to fix this, we could get around it by making the pivot a random element/middle
+- this is why the pivot point makes a difference, depending on the array
