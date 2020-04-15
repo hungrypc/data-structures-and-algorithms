@@ -19,3 +19,83 @@ picking a pivot:
 - ideally, the pivot should be chosen so that it's roughly the median value in the data set you're sorting
 - for simplicity, we'll always choose the pivot to be the first element (will talk about consequences later)
 
+## psuedocode
+- write a function called pivot that accepts three arguments
+  - an array, a start index, and an end index (these can default to 0 and array length - 1)
+- grab the pivot from the start of the array
+- store the currect pivot index in a variable (this will keep track of where the pivot shoud end up)
+- loop through the array from the start until the end
+  - if the pivot is greater than the current element, increment the pivot index variable and then swap the current element with the element at the pivot index
+- swap the starting element (ie the pivot) with the pivot index
+- return the pivot index
+
+## pivot helper implementation
+```js
+function pivot(arr, start = 0, end = arr.length + 1) {
+  function swap(array, i, j) {
+    let temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+
+  let pivot = arr[start];
+  let swapIndex = start;
+
+  for (let i = start + 1; i < arr.length; i++) {
+    if (pivot > arr[i]) {
+      swapIndex++;
+      swap(arr, swapIndex, i);
+    }
+  }
+  swap(arr, swapIndex, i);
+  return swapIndex;
+}
+```
+
+## quick sort implementation
+
+psuedocode:
+- call the pivot helper on the array
+- when the helper returns the updated pivot index, recursively call the pivot helper on the subarray to the left of that index, and the subarray to the right of that index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
