@@ -63,15 +63,3 @@ const p2 = new Point(10, 10);
 Point.distance(p1, p2); // 7.00106...
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
