@@ -259,38 +259,4 @@ this is called a binary search
 - time complexity = O(logn)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[>>> Next Page >>>](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/5__optional_challenges.md)

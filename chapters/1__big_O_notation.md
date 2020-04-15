@@ -166,9 +166,8 @@ essentially: _the logarithm of a number roughly measures the number of times you
 O(log n) time complexity is really good
 O(nlog n) isnt great (it's worse than O(n) but its better than O(n^2))
 
-
 [bigO cheatsheet](https://www.bigocheatsheet.com/)
 
 
-[C2 - Analyzing Array and Object Performance](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/2__analyzing_array_and_object_performance.md)
+[>>> Next Page >>>](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/2__analyzing_array_and_object_performance.md)
 

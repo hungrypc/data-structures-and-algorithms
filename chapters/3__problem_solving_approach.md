@@ -30,3 +30,7 @@ ask yourself these questions:
 ## step 5 - look back and refactor
 - make sure you talk about how you can improve on what you've written (what you like or dont like, ask these questions out loud)
 
+
+
+[>>> Next Page >>>](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/4__problem_solving_patterns.md)
+
