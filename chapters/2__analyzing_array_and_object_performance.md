@@ -52,3 +52,6 @@ sort    | O(n logn)
 etc     | O(n)
 
 note: etc = forEach/map/filter/reduce/etc
+
+
+[C3 - Problem Solving Approach](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/3__problem_solving_approach.md)

@@ -155,7 +155,7 @@ this means that the space is bound by n = O(n) space
 
 ## logarithms
 
-whats a log again? its the inverse of expenentiation
+whats a log again? its the inverse of exponentiation
 
 log2(8) = 3   ->    2^3 = 8
 log2(value) = exponent    ->    2^exponent = value
@@ -168,4 +168,7 @@ O(nlog n) isnt great (it's worse than O(n) but its better than O(n^2))
 
 
 [bigO cheatsheet](https://www.bigocheatsheet.com/)
+
+
+[C2 - Analyzing Array and Object Performance](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/2__analyzing_array_and_object_performance.md)
 
