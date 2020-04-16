@@ -113,7 +113,7 @@ class DoublyLinkedList {
   shift() {
     if (this.length === 0) return undefined;
     let oldHead = this.head;
-    if (length === 1) {
+    if (this.length === 1) {
       this.head = null;
       this.tail = null;
     } else {
@@ -369,7 +369,7 @@ class DoublyLinkedList {
   shift() {
     if (this.length === 0) return undefined;
     let oldHead = this.head;
-    if (length === 1) {
+    if (this.length === 1) {
       this.head = null;
       this.tail = null;
     } else {
