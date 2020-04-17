@@ -17,3 +17,5 @@
 - [C17 - Singly Linked Lists](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/17__singly_linked_list.md)
 - [C18 - Doubly Linked Lists](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/18__doubly_linked_list.md)
 - [C19 - Stacks & Queues](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/19__stacks_and_queues.md)
+- [C20 - Intro to Trees](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/20__intro_to_trees.md)
+- [C21 - Binary Search Trees](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/21__binary_search_trees.md)
