@@ -41,7 +41,67 @@ psuedocode:
     - check to see if there is a node to the left
       - if there is, move to that node and repeat these steps
       - if there is not, add that node as the left property
+```js
+class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
 
+  insert(value) {
+    let newNode = new Node(value);
+    if (!this.root) {
+      this.root = newNode;
+      return this;
+    } else {
+      let current = this.root;
+      while (true) {
+        if (value === current.value) return undefined;
+        if (value < current.value) {
+          if (!current.left) {
+            current.left = newNode;
+            return this;
+          }
+          current = current.left;
+        } else {
+          if (!current.right) {
+            current.right = newNode;
+            return this;
+          }
+          current = current.right;
+        }
+      }
+    }
+  }
+}
+```
+
+### find()
+can be done interatively or recursively
+psuedocode:
+- starting at root
+  - check if there's a root, if not - we're done searching
+  - there there is a root, check if the value of the new node is the value we are looking for.
+    - if found, we're done
+    - if not, check to see if the value is greater than or less than the value of the root
+      - if it is greater
+        - check to see if there is a node to the right
+          - if there is, move to that node and repeat these steps
+          - if there is not, we're done searching
+      - if it is less
+        - check to see if there is a node to the left
+          - if there is, move to that node and repeat these steps
+          - if there is not, we're done searching
+```js
+class BinarySearchTree {
+  constructor() {
+    this.root = null;
+  }
+
+  find(value) {
+
+  }
+}
+```
 
 
 
