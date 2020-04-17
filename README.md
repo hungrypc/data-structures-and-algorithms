@@ -16,3 +16,4 @@
 - [C16 - Data Structures Intro](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/16__data_structures_intro.md)
 - [C17 - Singly Linked Lists](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/17__singly_linked_list.md)
 - [C18 - Doubly Linked Lists](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/18__doubly_linked_list.md)
+- [C18 - Stacks & Queues](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/19__stacks_and_queues.md)

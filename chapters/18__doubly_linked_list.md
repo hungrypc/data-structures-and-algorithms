@@ -464,22 +464,3 @@ class DoublyLinkedList {
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
