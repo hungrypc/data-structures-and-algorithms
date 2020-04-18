@@ -20,3 +20,4 @@
 - [C20 - Intro to Trees](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/20__intro_to_trees.md)
 - [C21 - Binary Search Trees](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/21__binary_search_trees.md)
 - [C22 - Tree Traversal](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/22__tree_traversal.md)
+- [C23 - Binary Heaps](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/23__binary_heaps.md)
