@@ -157,7 +157,7 @@ space complexity = O(1)
 
 _creating a **window** which can either be an array or number from one position to another_
 
-depending on a certain condition, the window either incrases or closes (and a new window is created)
+depending on a certain condition, the window either increases or closes (and a new window is created)
 - useful for keeping track of a subset of data in an array/string/etc
 
 eg. write a function that accepts a string and finds the longest sequence of unique characters
@@ -193,14 +193,16 @@ explanation:
 instead of re-adding numbers that have already been added together, subtract the window's first element's value and add the remainder to the value of the next element after the window
 
 eg
+```js
 maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 3);
 
-[1, 2, 5, 2, 8, 1, 5]
- ^.....^              = 8
+//  [1, 2, 5, 2, 8, 1, 5]
+//   ^.....^              = 8
 
-[1, 2, 5, 2, 8, 1, 5]
-    ^.....^
- -1       +2          = 8 - 1 + 2 = 9
+//  [1, 2, 5, 2, 8, 1, 5]
+//      ^.....^
+//   -1       +2          = 8 - 1 + 2 = 9
+ ```
 
 time complexity = O(n)
 space complexity = O(1)
