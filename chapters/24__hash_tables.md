@@ -205,26 +205,3 @@ access    | O(1)
 
 it is possible to write a hash function that is constant time, generally every programming language that has an implementation of a hash table has a constant time hash function
 - different to a cryptographic hash function, which does need to take time -> hash function traverses every part of the data
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
