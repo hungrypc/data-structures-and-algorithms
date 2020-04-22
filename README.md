@@ -22,3 +22,4 @@
 - [C22 - Tree Traversal](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/22__tree_traversal.md)
 - [C23 - Binary Heaps](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/23__binary_heaps.md)
 - [C24 - Hash Tables](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/24__hash_tables.md)
+- [C25 - Graphs](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/25__graphs.md)
