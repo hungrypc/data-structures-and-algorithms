@@ -36,8 +36,8 @@ two approaches:
 - using an array or list to store the edges
 
 ### differences and big O
-v = number of vertices
-e = number of edges
+- v = number of vertices
+- e = number of edges
 
 operation      | adjacency list | adjacency matrix
 ---------------|----------------|-----------------
