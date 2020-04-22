@@ -36,17 +36,17 @@ two approaches:
 - using an array or list to store the edges
 
 ### differences and big O
-|v| = number of vertices
-|e| = number of edges
+v = number of vertices
+e = number of edges
 
 operation      | adjacency list | adjacency matrix
 ---------------|----------------|-----------------
-add vertex     |O(1)            |O(|v^2|)
+add vertex     |O(1)            |O(v^2)
 add edge       |O(1)            |O(1)
-remove vertex  |O(|v| + |e|)    |O(|v^2|)
-remove edge    |O(|e|)          |O(1)
-query          |O(|v| + |e|)    |O(1)
-storage        |O(|v| + |e|)    |O(|v^2|)
+remove vertex  |O(v + e)        |O(v^2)
+remove edge    |O(e)            |O(1)
+query          |O(v + e)        |O(1)
+storage        |O(v + e)        |O(v^2)
 
 
 
