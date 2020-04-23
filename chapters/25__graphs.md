@@ -146,3 +146,39 @@ class Graph {
   }
 }
 ```
+
+## final form (for now)
+```js
+class Graph {
+  constructor() {
+    this.adjacencyList = {};
+  }
+
+  addVertex(vertex) {
+    if (!this.adjacencyList[vertex]) {
+      this.adjacencyList[vertex] = [];
+    }
+  }
+
+  addEdge(v1, v2) {
+    if(Object.keys(this.adjacencyList).includes(v1 && v2)) {
+      this.adjacencyList[v1].push(v2);
+      this.adjacencyList[v2].push(v1);
+    }
+  }
+  removeEdge(v1, v2) {
+    if(Object.keys(this.adjacencyList).includes(v1 && v2)) {
+      this.adjacencyList[v1] = this.adjacencyList[v1].filter(e => e !== v2);
+      this.adjacencyList[v2] = this.adjacencyList[v2].filter(e => e !== v1);
+    }
+  }
+  removeVertex(vertex) {
+    if(this.adjacencyList[vertex]) {
+      for (const v in this.adjacencyList) {
+        this.removeEdge(vertex, v);
+      }
+      delete this.adjacencyList[vertex];
+    }
+  }
+}
+````
