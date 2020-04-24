@@ -25,3 +25,4 @@
 - [C25 - Graphs](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/25__graphs.md)
 - [C26 - Graph Traversal](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/26__graph_traversal.md)
 - [C27 - Dijkstra's Algorithm](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/27__dijkstras_algorithm.md)
+- [C28 - Dynamic Programming](https://github.com/hungrypc/data-structures-and-algorithms/blob/master/chapters/28__dynamic_programming.md)
