@@ -23,8 +23,8 @@ Any time we're trying to derive some digit (say, the 5th number in the sequence)
 
 So there are subproblems here, we break down one problem into smaller steps.
 
-This is often done in recursion - when we write recursive solutions, there are subproblems involved.
-**! but that doesn't mean that they overlap !**
+This is often done in recursion - when we write recursive solutions, there are subproblems involved.\
+**! but that doesn't mean that they overlap !**\
 For overlapping subproblems, we need to look for repetition - if we are repeating the subproblem(s).
 
 
