@@ -91,7 +91,7 @@ psuedocode:
       - updated the distances object with new lower distance
       - update the previous object to contain that vertex
       - enqueue the vertex with the total distance from the start node
-      ```js
+```js
 class WeightedGraph {
   constructor() {
     this.adjacencyList = {};
