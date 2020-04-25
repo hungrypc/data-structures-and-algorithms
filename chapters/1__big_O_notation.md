@@ -1,10 +1,10 @@
-# big O notation
+# Big O Notation
 
-## intro
-
-eg: write a function that calculates the sum of all numbers from 1 up to (and including) n
-
-solution 1:
+## Intro
+```
+write a function that calculates the sum of all numbers from 1 up to (and including) n
+```
+Solution 1:
 ```js
 function addUpTo(n) {
   let total = 0;
@@ -15,42 +15,42 @@ function addUpTo(n) {
 };
 ```
 
-solution 2:
+Solution 2:
 ```js
 function addUpTo(n) {
   return n * (n + 1) / 2;
 };
 ```
 
-which is better, solution 1 or solution 2?
+Which is better, solution 1 or solution 2?
 
-**big O allows us to assign a value in general terms to talk about how code compares to other code without having to actually time each function**
+**Big O allows us to assign a value in general terms to talk about how code compares to other code without having to actually time each function**
 
-let's count the number of simple operations the computer has to perform
+Let's count the number of simple operations the computer has to perform.
 
-solution 2 has three operations happening:
-  1. multiplication (n *)
-  2. addition (n + 1)
-  3. division ( / 2)
+Solution 2 has three operations happening:
+  1. Multiplication (n *)
+  2. Addition (n + 1)
+  3. Sivision ( / 2)
 
-solution 1 has n operations happening because it's in a loop.
+Solution 1 has n operations happening because it's in a loop.
   - n additions (total += 1; i++)
   - n assignments (total += 1; i++)
   - 2 assignment (i = 1; total = 0)
   - n comparisons (i <= n)
-depending on what we count, number of opeations can be as low as 2n or as high as 5n. regardless of the exact number, the number of operations grows roughly proportionally with n
+Depending on what we count, number of opeations can be as low as 2n or as high as 5n. regardless of the exact number, the number of operations grows roughly proportionally with n.
 
 SO...
 
-for solution 1
+For solution 1
   - as n increases, time increases (linearly)
   - this is bounded by n; bigO = O(n)
 
-for solution 2
+For solution 2
   - as n grows, the time doesn't really change - there's always 3 operations that happen
   - this is constant; bigO = O(1)
 
-**big O helps us describe the relationship b/t input size and time relative to that input**
+**Big O helps us describe the relationship b/t input size and time relative to that input**
 
 eg 2:
 ```js

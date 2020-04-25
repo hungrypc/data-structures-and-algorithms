@@ -74,7 +74,7 @@ The problem is that we are repeating things.
 **This is where Dynamic Programming comes in.**
 > Using past knowledge to make solving future problems easier
 
-#### Memoization
+### Memoization
 *Storing the results of expensive function calls and returning the cached result when the same inputs occur again.*
 ```js
 //  memoized solution
@@ -88,7 +88,7 @@ function fib(n, memo = []) {
 ```
 This is **much** faster, with a time complexity of O(n).
 
-#### Tabulation
+### Tabulation
 So far, everything we've been doing has been a **top-down** approach. We start from the top (what we're trying to find) and keep going down to fill in the gaps until we hit our base case (where we add everything together).
 
 HOWEVER, we can use another approach: **bottom-up**. This can be done via Tabulation:\
