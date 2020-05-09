@@ -1,4 +1,4 @@
-# problem solving patterns
+# Problem Solving Patterns
 
 ## frequency counter
 
@@ -6,6 +6,7 @@ _using **objects or sets** to collect values/frequencies of values_
 - this can often avoid the need for nested loops or O(n^2) operations with arrays/strings
 
 eg. write a function called **same**, which accepts two arrays. the function should return true if every value in the array has it's corresponding value squared in the second array. the frequency of values must be the same
+
 ```js
 same([1, 2, 3], [4, 1, 9]); // true
 same([1, 2, 3], [1, 9]);    // false
@@ -13,6 +14,7 @@ same([1, 2, 1], [4, 4, 1]); // false (must be same frequency)
 ```
 
 solution:
+
 ```js
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -36,13 +38,14 @@ function same(arr1, arr2) {
   }
   return true;
 }
-````
+```
 
 time complexity = O(n)
 space complexity = O(n)
 
 practice question:
 given two strings, write a function to determine if the second string is an anagram of the first. an anagram is a word formed by rearranging the letters of another
+
 ```js
 validAnagram('', ''); // true
 validAnagram('aaz', 'zza'); // false
@@ -70,6 +73,7 @@ function validAnagram(str1, str2) {
 }
 ```
 could do better and reduce space by only having one map rather than two:
+
 ```js
 function validAnagram(str1, str2) {
   if (str1.length !== str2.length) {
