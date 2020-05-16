@@ -176,8 +176,24 @@ minSubArrayLen([2, 1, 6, 5, 4], 9); // 2
 minSubArrayLen([3, 1, 7, 11, 2, 9, 8, 21, 62, 33, 19], 52); // 1 ([62])
 ```
 ```js
-function minSubArrayLen(arr, target) {
+function minSubArrayLen(nums, s) {
+  if (!nums.length) return 0;
 
+  let min = Infinity;
+  let left = 0;
+  let sum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] >= s) return 1;
+    sum += nums[i];
+    while(sum >= s) {
+      min = Math.min(min, i + 1 - left);
+      sum -= nums[left]
+      left++
+    }
+  }
+
+  if (min === Infinity) return 0;
+  return min;
 }
 
 ```
@@ -197,6 +213,9 @@ findLongestSubstring("bbbbbbb"); // 1
 ```
 ```js
 function findLongestSubstring(string) {
+  if (string.length === 0) return 0;
+
+  let count = 0;
 
 }
 
