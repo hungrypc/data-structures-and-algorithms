@@ -4,16 +4,18 @@ builds up the sort by gradually creating a larger left half which is always sort
 - instead of finding the largest/smallest element at a time, it takes each element and places it where it should go in the sorted portion of the array
 
 eg.
-[5, 3, 4, 1, 2]
- o  ^
-[3, 5, 4, 1, 2]
- o..o  ^
-[3, 4, 5, 1, 2]
- o.....o  ^
-[1, 3, 4, 5, 2]
- o........o  ^
-[1, 2, 3, 4, 5]
 
+```js
+  [5, 3, 4, 1, 2]
+// o  ^
+  [3, 5, 4, 1, 2]
+// o..o  ^
+  [3, 4, 5, 1, 2]
+// o.....o  ^
+  [1, 3, 4, 5, 2]
+// o........o  ^
+  [1, 2, 3, 4, 5]
+```
 
 ## psuedocode
 - start by picking the second element in the array
