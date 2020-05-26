@@ -226,6 +226,7 @@ search([1, 2, 3, 4, 5, 6], 11); // -1
 ```
 
 shit solution:
+
 ```js
 function search(arr, val) {
   for (let i = 0; i < arr.length; i++) {
@@ -240,13 +241,14 @@ this is called a linear search
 - time complexity = O(n)
 
 better solution:
+
 ```js
 function search(arr, val) {
   let min = 0;
   let max = array.length - 1;
 
   while (min <= max) {
-    let middle = Math.floor((min + max) / 2);
+    let middle = Math.floor(min + ((min + max) / 2));
     let currentElement = array[middle];
 
     if (array[middle] < val) {
