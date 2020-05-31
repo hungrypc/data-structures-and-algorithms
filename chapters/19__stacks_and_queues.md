@@ -89,7 +89,6 @@ class Stack {
     this.size = 0;
   }
   pop(val) {
-    let newNode = new Node(val);
     if (!this.first) return null;
     let temp = this.first;
     if (this.first === this.last) {
@@ -139,7 +138,7 @@ class Stack {
     return ++this.size;
   }
 
-  pop(val) {
+  pop() {
     if (!this.first) return null;
     let temp = this.first;
     if (this.first === this.last) {
