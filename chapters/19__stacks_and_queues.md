@@ -140,7 +140,6 @@ class Stack {
   }
 
   pop(val) {
-    let newNode = new Node(val);
     if (!this.first) return null;
     let temp = this.first;
     if (this.first === this.last) {
